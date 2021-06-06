@@ -36,7 +36,7 @@ def say_hi(weather):
     voices = engine.getProperty('voices') #获取音色
     engine.setProperty('voice', voices[1].id) #修改音色角色，0为男，1为女
     engine.setProperty('voice','zh') #播报语言，zhy为粤语
-    engine.say(weather)
+    engine.say(weather) #播报获取到的内容
     engine.runAndWait()
     engine.stop()
 if __name__ == '__main__':
