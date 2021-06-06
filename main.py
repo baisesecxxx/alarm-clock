@@ -9,7 +9,7 @@ headers = {
 #起床铃声
 def py_player():
     pygame.mixer.init() #初始化
-    pygame.mixer.music.load("/mp3/1.mp3") #载入音频资源
+    pygame.mixer.music.load("./mp3/1.mp3") #载入音频资源
     pygame.mixer.music.play()
     while pygame.mixer.music.get_busy() == True: #判断音频资源是否被占用，等待第一首播放完毕
         continue
